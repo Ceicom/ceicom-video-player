@@ -173,10 +173,9 @@
     /**********************************/
 
     // commonjs
-    if (typeof exports !== "undefined") {
+    if (typeof exports !== "undefined")
         exports.CeicomVideoPlayer = CeicomVideoPlayer;
-    } else {
+    else
         window.CeicomVideoPlayer = CeicomVideoPlayer;
-    }
 
 }(typeof global !== "undefined" ? global : this));

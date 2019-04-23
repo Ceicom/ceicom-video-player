@@ -204,9 +204,5 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   // commonjs
 
 
-  if (typeof exports !== "undefined") {
-    exports.CeicomVideoPlayer = CeicomVideoPlayer;
-  } else {
-    window.CeicomVideoPlayer = CeicomVideoPlayer;
-  }
+  if (typeof exports !== "undefined") exports.CeicomVideoPlayer = CeicomVideoPlayer;else window.CeicomVideoPlayer = CeicomVideoPlayer;
 })(typeof global !== "undefined" ? global : void 0);

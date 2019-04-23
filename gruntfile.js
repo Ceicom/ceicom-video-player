@@ -10,7 +10,7 @@ module.exports = function (grunt) {
         less: {
             lessfiles: {
                 files: {
-                    "build/cmp.css": "less/main.less"
+                    "build/cvp.css": "less/main.less"
                 },
                 ieCompat: false
             }
@@ -40,7 +40,7 @@ module.exports = function (grunt) {
                 ]
             },
             lessfiles: {
-                src: 'build/cmp.css'
+                src: 'build/cvp.css'
             }
         },
 
@@ -51,7 +51,7 @@ module.exports = function (grunt) {
             },
             lessfiles: {
                 files: {
-                    'build/cmp.min.css': ['build/cmp.css']
+                    'build/cvp.min.css': ['build/cvp.css']
                 }
             }
         },
@@ -74,7 +74,7 @@ module.exports = function (grunt) {
                 presets: ['@babel/preset-env']
             },
             dist: {
-                files: { 'build/cmp.js': 'js/script.js' }
+                files: { 'build/cvp.js': 'js/script.js' }
             }
         },
 
@@ -89,7 +89,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: 'build',
-                    src: ['cmp.js'],
+                    src: ['cvp.js'],
                     dest: 'build',
                     ext: '.min.js',
                     extDot: 'last'
